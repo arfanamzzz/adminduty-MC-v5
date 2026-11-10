@@ -1,0 +1,82 @@
+# ---------------- Daftar admin ----------------
+# Tulis NAMA MINECRAFT yang boleh pakai /adminduty (huruf besar/kecil bebas).
+# Hanya nama di sini yang punya /adminduty dan kena aturan "belum on duty".
+# Player lain tidak punya /adminduty dan tidak dapat notif apa pun.
+# Habis edit, ketik /adminduty reload (atau restart server).
+admins:
+  - NamaMinecraftKamu
+  - NamaAdminLain
+
+# ---------------- Pesan ----------------
+messages:
+  prefix: "&6[AdminDuty] "
+  on-duty: "&fKamu sekarang &a&lON DUTY&f. Fitur admin aktif."
+  off-duty: "&fKamu sekarang &c&lOFF DUTY&f. Fitur admin dimatikan."
+  not-on-duty: "&cKamu belum on duty! Ketik &f/adminduty &cdulu untuk memakai fitur admin."
+  console: "&cCommand ini hanya untuk player."
+  reloaded: "&aConfig berhasil di-reload."
+
+# Command dari plugin-plugin ini dianggap command admin (kalau pemakainya admin tapi belum on duty).
+# Selain ini, command yang punya permission default OP (termasuk command vanilla
+# seperti /give, /gamemode, /op, dll) juga otomatis dianggap command admin.
+admin-plugins:
+  - EssentialsX
+  - Essentials
+  - FlectonePulse
+  - CustomAnvil
+  - MendingInfinityFix
+  - WorldEdit
+
+# Command yang TETAP boleh dipakai walau belum on duty (command umum untuk semua player).
+# Tulis tanpa "/" dan huruf kecil.
+always-allowed:
+  - adminduty
+  - duty
+  - help
+  - list
+  - me
+  - msg
+  - tell
+  - w
+  - m
+  - whisper
+  - r
+  - reply
+  - mail
+  - spawn
+  - home
+  - homes
+  - sethome
+  - delhome
+  - back
+  - warp
+  - warps
+  - tpa
+  - tpahere
+  - tpaccept
+  - tpdeny
+  - tpcancel
+  - afk
+  - bal
+  - balance
+  - pay
+  - baltop
+  - rules
+  - motd
+  - sit
+  - gsit
+  - gsitreload
+  - skin
+  - ignore
+  - online
+  - toponline
+  - ball
+  - coin
+  - try
+  - chatcolor
+  - chatsetting
+  - flectonepulse
+  - poll
+  - stream
+  - rockpaperscissors
+  - tictactoe

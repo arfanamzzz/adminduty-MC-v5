@@ -1,0 +1,18 @@
+name: AdminDuty
+version: '${project.version}'
+main: com.arfan.adminduty.AdminDuty
+api-version: '1.21'
+author: arfan
+description: Mode duty untuk admin (daftar nama di config). Command admin hanya jalan kalau sudah on duty.
+
+commands:
+  adminduty:
+    description: Toggle ON/OFF duty admin
+    usage: /adminduty
+    permission: adminduty.use
+    aliases: [duty]
+
+permissions:
+  adminduty.use:
+    description: Diberikan otomatis ke nama yang ada di config (admins)
+    default: false
